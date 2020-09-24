@@ -1,0 +1,29 @@
+.Row {
+    margin: 1px;
+}
+
+.Row td {
+    padding: 15px;
+}
+
+.StatusRow>div {
+    display: flex;
+    align-items: center;
+}
+
+.Row i {
+    font-size: 5px;
+    margin-right: 3px;
+}
+
+.Yellow {
+    color: #EFC54B;
+}
+
+.Green {
+    color: #9BE64D;
+}
+
+.Red {
+    color: #DA534F;
+}

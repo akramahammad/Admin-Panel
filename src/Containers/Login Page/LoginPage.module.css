@@ -1,0 +1,23 @@
+.LoginBox {
+    width: 30%;
+    margin: 0 auto;
+    background-color: #435C70;
+    padding: 40px 50px;
+}
+
+.LoginBox h3 {
+    margin: 0px 0 45px 0;
+    text-align: center;
+}
+
+@media(max-width:600px) {
+    .LoginBox {
+        width: 90%;
+        margin: 2% auto;
+        box-sizing: border-box;
+        padding: 8% 6%;
+    }
+    .Main {
+        height: 80vh;
+    }
+}

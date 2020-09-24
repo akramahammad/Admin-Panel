@@ -1,0 +1,26 @@
+td,
+th {
+    padding: 5px 15px;
+    font-size: 16px;
+}
+
+th {
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #486177;
+}
+
+td {
+    background-color: #50697F;
+}
+
+tr {
+    border-bottom: 1px solid #435C70;
+}
+
+@media(max-width:600px) {
+    td,
+    th {
+        font-size: 13px;
+    }
+}

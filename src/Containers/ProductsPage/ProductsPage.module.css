@@ -1,0 +1,108 @@
+.Main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.ProductList {
+    background-color: #435C70;
+    padding: 4%;
+}
+
+.CategoryList {
+    background-color: #435C70;
+    padding: 4%;
+}
+
+.CategoryList h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.TableHeaders th {
+    font-size: 15px;
+    padding: 12px 10px;
+}
+
+.OverLay {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+}
+
+.Popup {
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    min-width: 300px;
+    min-height: 150px;
+    background-color: #435C70;
+    padding: 1% 3% 3% 3%;
+    z-index: 5;
+}
+
+.Popup h3 {
+    text-align: center;
+}
+
+.Popup form>div {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+
+.Popup button {
+    margin-top: 10px;
+}
+
+.PopupHeading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Popup i {
+    cursor: pointer;
+}
+
+.None {
+    display: none;
+}
+
+@media(max-width:600px) {
+    .Main {
+        flex-wrap: wrap;
+        margin: 5% 3%;
+    }
+    .ProductList,
+    .CategoryList {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 10px 0;
+    }
+    .TableSection {
+        overflow: auto;
+        max-height: 80vh;
+    }
+    .TableSection table {
+        margin: 0 auto;
+        width: 90%;
+        border-collapse: collapse;
+    }
+    .TableHeaders th {
+        font-size: 13px;
+    }
+    .CategoryList i {
+        padding: 14px;
+    }
+}

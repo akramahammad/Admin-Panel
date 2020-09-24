@@ -1,0 +1,20 @@
+.DeleteIconWrapper {
+    cursor: pointer;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: #435C70;
+    margin: 0 auto;
+}
+
+.DeleteIconWrapper i {
+    padding: 13px;
+}
+
+.Light {
+    opacity: 0.7;
+    background-color: #567086;
+}

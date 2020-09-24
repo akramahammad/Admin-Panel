@@ -1,0 +1,40 @@
+.InputBoxDiv {
+    width: 45%;
+    box-sizing: border-box;
+}
+
+.InputBoxDiv p {
+    margin: 0;
+    margin: 10px 0px;
+    font-size: 14px;
+}
+
+.InputBox {
+    width: 100%;
+    background-color: #567086;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding-left: 10px;
+    box-sizing: border-box;
+    height: 40px;
+    border: 1.5px solid #435C70;
+    transition: all 150ms ease-in;
+}
+
+.InputBox:focus {
+    border: 1.5px solid #B2CEE7;
+}
+
+.Full {
+    width: 100%;
+}
+
+@media(max-width:600px) {
+    .InputBoxDiv p {
+        font-size: 12px;
+    }
+    .InputBoxDiv {
+        width: 100%;
+    }
+}

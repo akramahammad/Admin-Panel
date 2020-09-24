@@ -1,0 +1,139 @@
+.AccountSection {
+    background-color: #435C70;
+    padding: 2% 3% 4% 3%;
+}
+
+select {
+    background-color: #567086;
+    width: 100%;
+    padding: 10px 15px;
+    color: #fff;
+    outline: none;
+    border: 2px solid #567086;
+    transition: 200ms ease-in;
+}
+
+select:focus {
+    border: 2px solid #B2CEE7;
+}
+
+main h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+main p {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+.AccountDetails {
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 0;
+}
+
+.AvatarSection {
+    background-color: #435C70;
+    padding: 3% 4% 0.7% 3%;
+    width: 31%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ImageDiv {
+    position: relative;
+    cursor: pointer;
+    margin-top: 5px 0;
+    max-height: 260px;
+    overflow: hidden;
+}
+
+.ImageDivInactive {
+    height: 260px;
+    margin: 13px 0 17px 0;
+    background-color: #567086;
+}
+
+.ImageOverlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+.ImageDiv:hover .ImageOverlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AvatarSection img {
+    width: 100%;
+}
+
+.Uploadbutton {
+    cursor: pointer;
+    padding: 13px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #F5A623;
+    border: 2px solid #F5A623;
+}
+
+.Uploadbutton:hover {
+    background-color: #435C70;
+    color: #F5A623;
+}
+
+input[type="file"] {
+    outline: none;
+    opacity: 0;
+}
+
+.AccountSettingsSection {
+    background-color: #435C70;
+    padding: 3% 4%;
+    box-sizing: border-box;
+    width: 65%;
+}
+
+.AccountSettingsSection>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+}
+
+@media(max-width:600px) {
+    main {
+        margin: 5% 4%;
+    }
+    .AccountSection p {
+        margin-top: 15px;
+    }
+    .AccountDetails {
+        flex-wrap: wrap;
+    }
+    .AvatarSection,
+    .AccountSettingsSection {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .AvatarSection {
+        padding: 5%;
+    }
+    .ImageDiv {
+        width: 70%;
+        margin: 20px auto;
+    }
+}

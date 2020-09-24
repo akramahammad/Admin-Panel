@@ -1,0 +1,19 @@
+.CheckBox {
+    min-width: 15px;
+    min-height: 15px;
+    border-radius: 50%;
+    background-color: #435C70;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.CheckBox i {
+    opacity: 0;
+    padding: 10px;
+}
+
+.Checked i {
+    opacity: 1;
+}

@@ -1,0 +1,104 @@
+.Topbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 7%;
+    align-items: center;
+    background-color: #567086;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h2 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.Topbar span {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 17px;
+    margin-left: 15px;
+    color: #fff;
+    font-style: normal;
+}
+
+.Topbar span:hover {
+    color: #F5A623;
+}
+
+.Topbar>p {
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.Dropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 500ms ease-in;
+    background-color: #567086;
+    position: absolute;
+    right: 0;
+    z-index: 5;
+}
+
+.HamburgerWrapper i {
+    font-size: 20px;
+}
+
+.MenuDiv {
+    display: none;
+    cursor: pointer;
+}
+
+@media(max-width:600px) {
+    nav {
+        display: none;
+    }
+    .Topbar {
+        height: 50px;
+    }
+    .Topbar>p {
+        display: none;
+    }
+    .Topbar span {
+        display: none;
+    }
+    .DropdownUsername {
+        display: block;
+        font-size: 15px;
+        font-weight: 600;
+        font-style: italic;
+        padding-bottom: 13px;
+        text-align: center;
+    }
+    .DropdownUsername span {
+        margin-left: 10px;
+        font-size: 15px;
+        display: inline;
+    }
+    .MenuDiv {
+        display: block;
+        position: relative;
+        transition: all 200ms ease-in;
+    }
+    .MenuDiv:hover .Dropdown {
+        max-height: 100vh;
+    }
+    .MenuDiv:hover .HamburgerWrapper i {
+        color: #F5A623;
+    }
+}
